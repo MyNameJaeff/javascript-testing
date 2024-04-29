@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="output"></div>
+</body>
+<script>
+    function print(text){
+        document.getElementById('output').innerHTML += text;
+    }
+
+    function newLine(){
+        document.getElementById('output').innerHTML += '<br>';
+    }
+
+    function clear(){
+        document.getElementById('output').innerHTML = '';
+    }
+    let text = ""
+    for(let i = 0; i < 10; i++){
+        text += '*';
+        document.getElementById('output').innerHTML += text + '<br>';
+    }
+
+</script>
+</html>
